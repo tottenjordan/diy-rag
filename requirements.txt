@@ -1,0 +1,11 @@
+google-cloud-aiplatform
+google-cloud-discoveryengine
+google-cloud-documentai 
+google-cloud-documentai-toolbox
+google-cloud-storage
+langchain-google-community
+langchain-google-vertexai
+langchain-google-community[vertexaisearch]
+langchain-google-community[docai]
+rich
+markdown
