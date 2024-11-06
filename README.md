@@ -2,6 +2,8 @@
 
 > These code examples demonstrate how to implement a RAG workflow using Vertex managed services (e.g., Vector Search, Batch Prediction), as well as APIs from the GenAI stack (e.g., Gemini, Embeddings for Text, Grounding, Ranking). Additionally, we use [Document AI](https://cloud.google.com/document-ai/?hl=en) to organize, annotate, and chunk our documents 
 
+<img src='imgs/deep_retrievers.png' width='1184' height='350'>
+
 ## Key highlights
 
 1. the RAG is *grounded*, meaning the LLM's output is tethered to specific, verifiable sources of information. This service supports grounding with my proprietary data, as well as Google Search (see [Grounding API](https://cloud.google.com/vertex-ai/generative-ai/docs/grounding/overview) for details)
@@ -19,6 +21,9 @@
 <img src='imgs/joe_dirte_logic.png' width='924' height='500'>
     
 </details>
+
+
+# Using this Repo
 
 
 #### Setup instructions
