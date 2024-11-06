@@ -2,16 +2,11 @@
 
 > These code examples demonstrate how to implement a RAG workflow using Vertex managed services (e.g., Vector Search, Batch Prediction), as well as APIs from the GenAI stack (e.g., Gemini, Embeddings for Text, Grounding, Ranking). Additionally, we use [Document AI](https://cloud.google.com/document-ai/?hl=en) to organize, annotate, and chunk our documents 
 
-<img src='imgs/deep_retrievers.png' width='1015' height='275'>
-
 ## Key highlights
 
 1. the RAG is *grounded*, meaning the LLM's output is tethered to specific, verifiable sources of information. This service supports grounding with my proprietary data, as well as Google Search (see [Grounding API](https://cloud.google.com/vertex-ai/generative-ai/docs/grounding/overview) for details)
-
 2. Document AI's [Layout Parser](https://cloud.google.com/document-ai/docs/layout-parse-chunk) is specifically designed for creating chunks of desired sizes while also maintaining location information from a documents hierarchy: `title > chapter > section > ... headings`
-
 3. the [Ranking API](https://cloud.google.com/generative-ai-app-builder/docs/ranking) reranks a list of candidate documents based on their relevancy to a corresponding query. This contrasts embedding retreival which look only at the semantic similarity of query and candidate pairs
-
 4. [Vertex AI Vector Search](https://cloud.google.com/vertex-ai/docs/vector-search/overview) is the vector database of choice. This service maintains high QPS and retreival recall as it scales to billions of vectors. It also supports filtering and enforcing diversity at query time
 
 
@@ -64,3 +59,7 @@ pip install rich --upgrade --quiet
 run this command in terminal from root to clear `__pycache__` files:
 
 > `find . | grep -E "(/__pycache__$|\.pyc$|\.pyo$)" | xargs rm -rf`
+
+---
+
+<img src='imgs/deep_retrievers.png' width='1015' height='275'>
