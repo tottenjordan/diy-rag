@@ -21,7 +21,7 @@
 </details>
 
 
-### Setup instructions
+#### Setup instructions
 
 <details>
   <summary>Install Vertex AI SDK and Other Packages</summary>
@@ -54,7 +54,7 @@ pip install rich --upgrade --quiet
     
 </details>
 
-## Random tips
+### Random tips
 
 run this command in terminal from root to clear `__pycache__` files:
 
