@@ -2,7 +2,7 @@
 
 > These code examples demonstrate how to implement a RAG workflow using Vertex managed services (e.g., Vector Search, Batch Prediction), as well as APIs from the GenAI stack (e.g., Gemini, Embeddings for Text, Grounding, Ranking). Additionally, we use [Document AI](https://cloud.google.com/document-ai/?hl=en) to organize, annotate, and chunk our documents 
 
-<img src='imgs/deep_retrievers.png' width='1015' height='300'>
+<img src='imgs/deep_retrievers.png' width='1015' height='275'>
 
 ## Key highlights
 
