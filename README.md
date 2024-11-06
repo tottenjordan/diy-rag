@@ -1,6 +1,6 @@
 # RAG from scratch w/ Vertex AI
 
-> These code examples demonstrate how to implement a RAG workflow using Vertex managed services (e.g., Vector Search, Batch Prediction), as well as APIs from the GenAI stack (e.g., Gemini, Embeddings for Text, Grounding, Ranking). Additionally, we use [Document AI](https://cloud.google.com/document-ai/?hl=en) to organize, annotate, and chunk our documents 
+> These code examples demonstrate how to implement a RAG workflow using Vertex managed services (e.g., Vector Search, Batch Prediction), as well as APIs from the GenAI stack (e.g., Gemini, Embeddings for Text, Grounding, Ranking). Additionally, we use [Document AI](https://cloud.google.com/document-ai/?hl=en) to organize, annotate, and chunk our documents
 
 ## Key highlights
 
@@ -9,6 +9,26 @@
 3. the [Ranking API](https://cloud.google.com/generative-ai-app-builder/docs/ranking) reranks a list of candidate documents based on their relevancy to a corresponding query. This contrasts embedding retreival which look only at the semantic similarity of query and candidate pairs
 4. [Vertex AI Vector Search](https://cloud.google.com/vertex-ai/docs/vector-search/overview) is the vector database of choice. This service maintains high QPS and retreival recall as it scales to billions of vectors. It also supports filtering and enforcing diversity at query time
 
+```
+├── README.md
+├── imgs
+├── notebooks
+│   ├── 01_ingest_rag.ipynb
+│   ├── 02_embeddings_rag.ipynb
+│   ├── 03_index_and_retrieve_rag.ipynb
+│   ├── 04_ranked_rag.ipynb
+│   ├── autosxs_eval_llama.ipynb
+│   └── files
+│       ├── embeddings-api
+│       ├── lending
+│       └── mlb
+├── requirements.txt
+└── src
+    ├── display_utils.py
+    ├── docai_utils.py
+    ├── gcs_loader.py
+    └── vvs_utils.py
+```
 
 <details>
   <summary>How does RAG work?</summary>
