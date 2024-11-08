@@ -76,13 +76,17 @@ pip install rich --upgrade --quiet
 
 ### Random tips
 
-run this command in terminal from root to clear `__pycache__` files:
+[1] run this command in terminal from root to clear `__pycache__` files:
 
 > `find . | grep -E "(/__pycache__$|\.pyc$|\.pyo$)" | xargs rm -rf`
 
----
+[2] get the status of a long running operation (LRO)
 
-<img src='imgs/deep_retrievers.png' width='1015' height='275'>
+```
+curl -X GET \
+     -H "Authorization: Bearer $(gcloud auth print-access-token)" \
+     "https://{LOCATION}-documentai.googleapis.com/v1/projects/{PROJECT_ID}/locations/{LOCATION}/operations/{OPERATION_ID}"
+```
 
 ### Google Cloud services
 
@@ -99,3 +103,7 @@ run this command in terminal from root to clear `__pycache__` files:
 * [Vertex Grounded Generation API](https://cloud.google.com/generative-ai-app-builder/docs/grounded-gen): Use the grounded generation API to generate well-grounded answers to a user's prompt. The grounding sources can be your Vertex AI Search data stores, custom data that you provide, or Google Search.
 
 * [Vertex Check Grounding API](https://cloud.google.com/generative-ai-app-builder/docs/check-grounding): The check grounding API determines how grounded a given piece of text is in a given set of reference texts. The API can generate supporting citations from the reference text to indicate where the given text is supported by the reference texts. Among other things, the API can be used to assess the grounded-ness of responses from a RAG systems. Additionally, as an experimental feature, the API also generates contradicting citations that show where the given text and reference texts disagree.
+
+---
+
+<img src='imgs/deep_retrievers.png' width='1015' height='275'>
