@@ -40,8 +40,7 @@
 
 # Using this Repo
 
-
-#### Setup instructions
+### Setup instructions
 
 <details>
   <summary>Install Vertex AI SDK and Other Packages</summary>
@@ -78,7 +77,7 @@ pip install rich --upgrade --quiet
 
 [1] run this command in terminal from root to clear `__pycache__` files:
 
-> `find . | grep -E "(/__pycache__$|\.pyc$|\.pyo$)" | xargs rm -rf`
+  * > `find . | grep -E "(/__pycache__$|\.pyc$|\.pyo$)" | xargs rm -rf`
 
 [2] get the status of a long running operation (LRO)
 
