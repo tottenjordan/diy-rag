@@ -90,7 +90,7 @@ run this command in terminal from root to clear `__pycache__` files:
 
 * [Vertex AI Embeddings API](https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings): The Vertex AI embeddings APIs let you create embeddings for text or multimodal inputs. Embeddings are vectors of floating point numbers that are designed to capture the meaning of their input. You can use the embeddings to power semantic search using Vector search.
 
-> For more information, see [Text embeddings](https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings) and [Multimodal embeddings](https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-multimodal-embeddings) in the Generative AI on Vertex AI documentation.
+  * > For more information, see [Text embeddings](https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings) and [Multimodal embeddings](https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-multimodal-embeddings) in the Generative AI on Vertex AI documentation.
 
 * [Vertex AI Vector Search](https://cloud.google.com/vertex-ai/docs/vector-search/overview): The retrieval engine is a key part of your RAG or search application. Vertex AI Vector Search is a retrieval engine that can search from billions of semantically similar or semantically related items at scale, with high queries per second (QPS), high recall, low latency, and cost efficiency. It can search over dense embeddings, and supports sparse embedding keyword search and hybrid search in Public preview.
 
