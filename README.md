@@ -83,3 +83,19 @@ run this command in terminal from root to clear `__pycache__` files:
 ---
 
 <img src='imgs/deep_retrievers.png' width='1015' height='275'>
+
+### Google Cloud services
+
+* The [Document AI Layout Parser](https://cloud.google.com/document-ai/docs/layout-parse-chunk): The Document AI Layout Parser transforms documents in various formats into structured representations, making content like paragraphs, tables, lists, and structural elements like headings, page headers, and footers accessible, and creating context-aware chunks that facilitate information retrieval in a range of generative AI and discovery apps.
+
+* [Vertex AI Embeddings API](https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings): The Vertex AI embeddings APIs let you create embeddings for text or multimodal inputs. Embeddings are vectors of floating point numbers that are designed to capture the meaning of their input. You can use the embeddings to power semantic search using Vector search.
+
+> For more information, see [Text embeddings](https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings) and [Multimodal embeddings](https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-multimodal-embeddings) in the Generative AI on Vertex AI documentation.
+
+* [Vertex AI Vector Search](https://cloud.google.com/vertex-ai/docs/vector-search/overview): The retrieval engine is a key part of your RAG or search application. Vertex AI Vector Search is a retrieval engine that can search from billions of semantically similar or semantically related items at scale, with high queries per second (QPS), high recall, low latency, and cost efficiency. It can search over dense embeddings, and supports sparse embedding keyword search and hybrid search in Public preview.
+
+* [Vertex Ranking API](https://cloud.google.com/generative-ai-app-builder/docs/ranking): The ranking API takes in a list of documents and reranks those documents based on how relevant the documents are to a given query. Compared to embeddings that look purely at the semantic similarity of a document and a query, the ranking API can give you a more precise score for how well a document answers a given query.
+
+* [Vertex Grounded Generation API](https://cloud.google.com/generative-ai-app-builder/docs/grounded-gen): Use the grounded generation API to generate well-grounded answers to a user's prompt. The grounding sources can be your Vertex AI Search data stores, custom data that you provide, or Google Search.
+
+* [Vertex Check Grounding API](https://cloud.google.com/generative-ai-app-builder/docs/check-grounding): The check grounding API determines how grounded a given piece of text is in a given set of reference texts. The API can generate supporting citations from the reference text to indicate where the given text is supported by the reference texts. Among other things, the API can be used to assess the grounded-ness of responses from a RAG systems. Additionally, as an experimental feature, the API also generates contradicting citations that show where the given text and reference texts disagree.
