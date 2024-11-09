@@ -17,9 +17,11 @@
 │   ├── 02_embeddings_rag.ipynb
 │   ├── 03_index_and_retrieve_rag.ipynb
 │   ├── 04_ranked_rag.ipynb
-│   ├── autosxs_eval_llama.ipynb
+│   ├── 05_check_grounding.ipynb
+│   ├── 06_eval_langchain_chains.ipynb
 │   └── files
 │       ├── embeddings-api
+│       ├── eval-chains
 │       ├── lending
 │       └── mlb
 ├── requirements.txt
